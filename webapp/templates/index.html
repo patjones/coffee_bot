@@ -14,17 +14,10 @@
     <title>Narrow Jumbotron Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="jumbotron-narrow.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
     <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <script src="https://use.fontawesome.com/31bab6a925.js"></script>
@@ -40,17 +33,19 @@
         <div class="navbar-header">
             <a class="navbar-brand" href="/"><i style="display: inline;" class="glyphicon glyphicon-icon-coffee-cup" aria-hidden="true"></i> Coffee Bot</a>
         </div>
-        <a class="navbar-brand" href="/analytics"><i style="display: inline;" aria-hidden="true"></i> analytics</a>        
+        <a class="navbar-brand" href="/analytics"><i style="display: inline;" aria-hidden="true"></i> Analytics</a>        
     </div>
 </nav>
 <body>
     <div class="container">
         <div class="jumbotron">
-          <h1>Welcome to Coffee Bot</h1> 
-          <p>Last pot brewed {{last.month}}/{{last.day}}/{{last.year}} {{last.hour}}:{{last.minute}}</p> 
-          <div>
+          <h1 style="text-align:center">Welcome to Coffee Bot</h1> 
+          <p style="text-align:center">Last pot brewed {{last.month}}/{{last.day}}/{{last.year}} {{last.hour}}:{{last.minute}}</p> 
+          <div style="text-align:center">
                  <a class="btn btn-lg"  href="/brew_button"><button class="btn btn-lg">brew</button></a>
-        </div>
+                 <a class="btn btn-lg"  href="/stop_brew_button"><button class="btn btn-lg">stop brewing</button></a>
+          </div>
+	  <img src="https://http.cat/418" alt="HTTP 418 YO" style="max-width:60%; display: block; margin-left: auto; margin-right: auto" text-align:center">
         </div>
         
       </div>

@@ -40,12 +40,14 @@
         <div class="navbar-header">
             <a class="navbar-brand" href="/"><i style="display: inline;" class="glyphicon glyphicon-icon-coffee-cup" aria-hidden="true"></i> Coffee Bot</a>
         </div>
-        <a class="navbar-brand" href="/analytics"><i style="display: inline;" aria-hidden="true"></i> analytics</a>        
+        <a class="navbar-brand" href="/analytics"><i style="display: inline;" aria-hidden="true"></i> Analytics</a>        
     </div>
 </nav>
 <body>
         <div class="container" align="center">
                 <embed type="image/svg+xml" src={{date_chart|safe}} style='max-width:900px'/>
+                <embed type="image/svg+xml" src={{water_level_chart|safe}} style='max-width:300px; max-height: 400px;'/>
+                <embed type="image/svg+xml" src={{temp_chart|safe}} style='max-width:900px'/>
         </div>
 </body>
 
